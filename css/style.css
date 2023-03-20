@@ -305,6 +305,13 @@ section{
   font-weight: bold;
   font-family: sans-serif;
 }
+.nosImg{
+  height: auto;
+  width: 94%;
+  margin-left: 5%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 .contenedorintroNos{
   background-image: linear-gradient(315deg, #f8dcc8 , #ffb580 ,#f8dcc8);
   border-radius: 10px;
@@ -325,6 +332,14 @@ section{
 }
 .tarjetaNos{
   width: 330px;
+  border: transparent;
+}
+.iconNos{
+  font-size: 50px;
+  color: #ff6b00;
+  text-shadow: 1px 1px 2px grey, 0 0 1em #ffb580, 0 0 0.2em #ffb580;
+  margin: auto;
+  padding-top: 10px;
 }
 .cierreNos{
   margin-top: 15px;
@@ -342,6 +357,86 @@ section{
   font-size: 20px;
   text-decoration: underline;
 }
+.condicionesIcon{
+  color: #ff6b00;
+  font-size: 20px;
+  padding: 5px;
+}
+/*Maypristas*/
+.textEffectMay{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+.textMay{
+  outline: none;
+  background: url(https://media.giphy.com/media/duuOhKVbKQO8B4YcYB/giphy.gif);
+  background-size: contain;
+  background-position: top left;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+.mayImg{
+  height: auto;
+  width: 94%;
+  margin-left: 5%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.condicionesEfecto::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.condicionesEfecto:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.condicionesEfecto::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #ff6b00;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.condicionesEfecto {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contenedorCondiciones {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  width: 80%;
+}
+.condiciones{
+  padding: 0px;
+  width: 60%;
+  height: auto;
+  margin-left: 5%;
+  text-align: end;
+}
+@media (orientation: landscape) {
+  .contenedorCondiciones {
+    grid-auto-flow: row;
+  }
+}
+
 /* Footer */
 footer {
     display: grid;
@@ -565,6 +660,10 @@ footer {
     .introNosotras{
       font-size: 15px;
     }
+    .nosImg{
+      margin-left: 15.5%;
+      width: 83%;
+        }
     .card-group{
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
