@@ -436,11 +436,6 @@ section{
   margin-left: 5%;
   text-align: end;
 }
-@media (orientation: landscape) {
-  .contenedorCondiciones {
-    grid-auto-flow: row;
-  }
-}
 
 /* Footer */
 footer {
@@ -536,6 +531,11 @@ footer {
   }
 
 /* Responsive */
+@media (orientation: landscape) {
+  .contenedorCondiciones {
+    grid-auto-flow: row;
+  }
+}
 @media screen and (max-width: 768px) {
   body{
     overflow-x: hidden;
@@ -671,7 +671,7 @@ footer {
     .card{
       width: 10rem;
     }
-    /*Nosotras*/
+  /*Nosotras*/
     .textEffectNos{
       margin-left: 30px;
       margin-bottom: 15px;
@@ -703,7 +703,7 @@ footer {
     .textoTarjetaNos{
       font-size: 12px;
     }
-    /*Mayorista*/
+  /*Mayorista*/
     .textEffectMay{
       margin-left: 30px;
       margin-bottom: 15px;
@@ -745,4 +745,91 @@ footer {
       margin-top: 15px;
       width: 100%;
     }
+}
+@media screen and (max-width: 415px) {
+  body{
+    overflow-x: hidden;
+  }
+  aside{
+    height: 50vh;
+  }
+  .textInicio2{
+    font-size: 40px;
+    padding-left: 45px;
+  }
+  .prllxIntro{
+    width: fit-content;
+    margin-right: 5px;
+    margin-left: 69px;
+  }
+  .text-center{
+    width: 18.2rem !important;
+    margin-left: 13%;
+  }
+  .card-text{
+    text-align: justify;
+    padding-left: 0px;
+  }
+  .card-body{
+    padding: 8px;
+  }
+  .prodNavResponsive{
+    position: absolute;
+  }
+  .textProd{
+    font-size: 40px;
+  }
+  .textEffectProd{
+    margin-bottom: 5px;
+    height: 50vh;
+  }
+  .prllxProd{
+    height: 400px;
+    background-attachment: local;
+    margin-left: 5%;
+    width: 93%;
+  }
+  .inicioProd{
+    margin-top: 50%;
+  }
+  .gridProd{
+    grid-template-columns: 1fr 1fr;
+  }
+  .cierre{
+    font-size: 15px;
+  }
+  .textEffectNos{
+    height: 50vh;
+  }
+  .textNos{
+    font-size: 50px;
+  }
+  .nosImg{
+    margin-left: 0px;
+    margin-right: 2%;
+    width: 97%;
+  }
+  .contenedorintroNos{
+    margin-left: -25px;
+  }
+  .card-group{
+    grid-template-columns: 1fr;
+    margin-left: -40px;
+  }
+  .tarjetaNos{
+    width: 17rem;
+  }
+  .textEffectMay{
+    height: 50vh;
+  } 
+  .textMay{
+    font-size: 50px;
+  }
+  .mayImg{
+    margin-left: 0px;
+    width: 97%;
+  }
+  .condiciones{
+    font-size: small;
+  }
 }
