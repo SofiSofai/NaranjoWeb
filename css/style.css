@@ -28,7 +28,7 @@ aside {
     color: #fff;
     width: 220px;
     padding-left: 20px;
-    height: 60vh;
+    height: 70vh;
     background-image: linear-gradient(315deg, #f8dcc8 , #ffb580 ,#f8dcc8);
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px ;
@@ -244,31 +244,7 @@ section{
     font-weight: bold;
     font-family: sans-serif;
   }
-.prllxProd{
-    background-image: url("../img/portadaProductos.jpg");
-    height: 500px;
-    width: 92%;
-    margin-left: 79px;
-    margin-bottom: 50px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.introProdu{
-  width: 70%;
-  height: auto;
-  justify-content: center;
-}
-.inicioProd{
-  text-align: center;
-  font-size: 50px;
-  margin-top: 20%;
-}
+
 /*BoostrapProd*/
 .card{
   width: 18rem;
@@ -434,7 +410,12 @@ section{
   margin-left: 5%;
   text-align: end;
 }
-
+/*Souvenirs*/
+.carousel{
+  height: auto;
+  width: 94%;
+  border-radius: 10px;
+}
 /* Footer */
 footer {
     display: grid;
@@ -750,7 +731,7 @@ footer {
     overflow-x: hidden;
   }
   aside{
-    height: 50vh;
+    height: 60vh;
   }
   .textInicio2{
     font-size: 40px;
