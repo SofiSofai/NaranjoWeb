@@ -416,6 +416,12 @@ section{
   width: 94%;
   border-radius: 10px;
 }
+.souvtext{
+  text-align:start;
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+}
 /* Footer */
 footer {
     display: grid;
@@ -813,6 +819,9 @@ footer {
     width: 97%;
   }
   .condiciones{
+    font-size: small;
+  }
+  .souvtext{
     font-size: small;
   }
 }
